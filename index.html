@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MinhAnh Tube</title>
+    <link rel="icon" href="assets/images/thumbnail.png">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Fira+Sans+Condensed%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7COpen+Sans%3A300%2C400%2C600%2C700%2C800'>
+    <link rel="stylesheet" href='assets/css/default.css'>
+    <link rel="stylesheet" href='assets/css/plugins.css'>
+    <link rel="stylesheet" href='assets/css/style.css'>
+    <link rel="stylesheet" href='assets/css/color.css'>
+    <link id="template-color" rel="stylesheet" href='assets/css/color.css'>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="spinner">
+            <div class="uil-ripple-css">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <header class="site-header fixed-top">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-xl-2 col-lg-2 my-auto d-none d-lg-block">
+                    <div class="d-flex">
+                        <a href="#" class="sidebar-toggle">
+                            <i class="far fa-bars"></i>
+                        </a>
+                        <div class="logo my-auto">
+                            <a href="index.html" class="custom-logo-link"><img src="assets/images/logo.png" class="custom-logo" alt="ViewTube"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 my-auto d-none d-xl-block">
+                    <form class="ajax-search-form" action="#">
+                        <input type="text" name="s" class="keyword" placeholder="Search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <ul class="datafetch"></ul>
+                    </form>
+                </div>
+                <div class="col-xl-1 col-lg-1 my-auto text-right">
+                    <a class="upload-video" href="upload-video.html"><i class="far fa-video-plus"></i></a>
+                </div>
+                <div class="col-xl-2 col-lg-2 my-auto">
+                    <div class="d-flex">
+                        <div class="d-flex my-auto">
+                            <i class="fad fa-sun my-auto"></i>
+                            <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="d-flex float-right">
+                            <div class="top-header-action">
+                                <div class="widget-header">
+                                    <div class="my-account-widget">
+                                        <div class="my-account-button">
+                                            <i class="fad fa-user"></i>
+                                        </div>
+                                        <div class="my-account-content">
+                                            <div class="header-profile-login">
+                                                <h6 class="text-center">Đăng nhập tài khoản</h6>
+                                                <form name="loginform" id="loginform" action="#" method="post">
+                                                    <p class="login-username">
+                                                        <label for="user_login">Tên tài khoản hoặc Gmail</label>
+                                                        <input type="text" name="log" id="user_login" class="input" value="" size="20" />
+                                                    </p>
+                                                    <p class="login-password">
+                                                        <label for="user_pass">Mật khẩu</label>
+                                                        <input type="password" id="user_pass" name="pwd">
+                                                    </p>
+                                                    <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Nhớ mật khẩu</label></p>
+                                                    <p class="login-submit">
+                                                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Đăng nhập" />
+                                                    </p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="off-canvas-menu-bar">
+        <div class="pl-30 pr-30">
+            <div class="row">
+                <div class="col-7 my-auto">
+                    <a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="512" height="85" src="assets/images/logo.png" class="custom-logo" alt="ViewTube"></a>
+                </div>
+                <div class="col-3 my-auto">
+                    <label class="toggle-switch">
+<input type="checkbox">
+<span class="slider round"></span>
+</label>
+                </div>
+                <div class="col-2 my-auto">
+                    <div class="mobile-nav-toggler"><span class="fas fa-bars"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="off-canvas-menu">
+        <div class="menu-backdrop"></div>
+        <i class="close-btn fa fa-close"></i>
+        <nav class="mobile-nav">
+            <div class="text-center pt-3 pb-3">
+                <a href="index.html" class="custom-logo-link" rel="home"><img src="assets/images/logo.png" class="custom-logo" alt="Sayara"></a>
+            </div>
+            <ul class="navigation">
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="d-flex topspace-90">
+            <div class="sidebar-menu open">
+                <nav class="desktop-menu">
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href="index.html"><i class="fas fa-home"></i><span>Trang chủ</span></a></li>
+                        <li class="menu-item"><a href="blog.html"><i class="fab fa-wordpress"></i><span>Bài viết</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fab fa-youtube"></i><span>Video</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-camera"></i><span>Hành động</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fab fa-amazon"></i><span>Khám phá</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-podcast"></i><span>Câu chuyện</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-coffee"></i><span>Viễn tưởng</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-gamepad"></i><span>Trò chơi</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-burn"></i><span>Kinh dị</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fab fa-chrome"></i><span>Bí ẩn</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-newspaper"></i><span>Tin tức</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-heart"></i><span>Tình cảm</span></a></li>
+                        <li class="menu-item"><a href="archive.html"><i class="fas fa-flask"></i><span>Khoa học</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-container">
+
+                <div class="banners mt-4 mb-5">
+                    <section class="banner" style="background: url(assets/images/elti-meshau-2S2F2exmbhw-unsplash.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-12 my-auto">
+                                    <div class="banner-content">
+                                        <h1>
+                                            Mr. Beans </h1>
+                                        <div class="d-block d-lg-flex">
+                                            <ul class="list-inline meta">
+                                                <li class="list-inline-item"><i class="fad fa-film-alt"></i>Hài hước</li>
+                                                <li class="list-inline-item"><i class="fad fa-calendar-week"></i>2021</li>
+                                                <li class="list-inline-item"><i class="fad fa-play-circle"></i>2 h 20 min</li>
+                                                <li class="list-inline-item"><span>4K</span></li>
+                                            </ul>
+                                        </div>
+                                        <p>Mr. Bean là một bộ phim truyền hình hài kịch nổi tiếng của Anh gồm 15 tập do ngôi sao nam Rowan Atkinson trong vai nhân vật chính được đặt tên cho phim.</p>
+                                        <a class="viewtube-btn popup-video mt-30" href="https://www.youtube.com/watch?v=z_9mqGnAwNc">Xem video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="banner" style="background: url(assets/images/pexels-kyle-loftus-2510428.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-12 my-auto">
+                                    <div class="banner-content">
+                                        <h1>
+                                            Gia đình siêu nhân </h1>
+                                        <div class="d-block d-lg-flex">
+                                            <ul class="list-inline meta">
+                                                <li class="list-inline-item"><i class="fad fa-film-alt"></i>Gia đình</li>
+                                                <li class="list-inline-item"><i class="fad fa-calendar-week"></i>2021</li>
+                                                <li class="list-inline-item"><i class="fad fa-play-circle"></i>2 h 20 min</li>
+                                                <li class="list-inline-item"><span>HD</span></li>
+                                            </ul>
+                                        </div>
+                                        <p>Gia đình siêu nhân 2 – Incredibles 2 là phần tiếp theo của bộ phim hoạt hình ăn khách nhất lịch sử 14 năm về trước kể về một gia đình với những siêu năng lực phi thường</p>
+                                        <a class="viewtube-btn popup-video mt-30" href="https://www.youtube.com/watch?v=ijhcpo3lmK4">Xem video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="banner" style="background: url(assets/images/chaozzy-lin-des3ft1Larc-unsplash.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-12 my-auto">
+                                    <div class="banner-content">
+                                        <h1>
+                                            Avengers </h1>
+                                        <div class="d-block d-lg-flex">
+                                            <ul class="list-inline meta">
+                                                <li class="list-inline-item"><i class="fad fa-film-alt"></i>Action</li>
+                                                <li class="list-inline-item"><i class="fad fa-calendar-week"></i>2021</li>
+                                                <li class="list-inline-item"><i class="fad fa-play-circle"></i>2 h 20 min</li>
+                                                <li class="list-inline-item"><span>8K</span></li>
+                                            </ul>
+                                        </div>
+                                        <p>Một tập hợp gồm những siêu anh hùng vượt qua những bất đồng những anh hùng mạnh nhất Trái đất đã sát cánh để chống đội quân của Loki.</p>
+                                        <a class="viewtube-btn popup-video mt-30" href="https://www.youtube.com/watch?v=TcMBFSGVi1c" tabindex="-1">Watch Video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 my-auto">
+                        <h1>Xu hướng</h1>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <div class="text-right">
+                            <a class="viewtube-btn bordered no" href="#">Xem nhiều hơn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center video-items" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                    <div class="col-xl-12">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/5465.jpg">
+                                    <source src="/assets/videos/vut_bay.mp4" type="video/mp4" />
+                                    <source src="/assets/videos/vut_bay.mp4" type="video/webm" />
+                                    </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/6b1345063abbc415fde0677567f2cf59.jpg" alt="Bayley Robertson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Vút bay | Trailer</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">
+Bayley Robertson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    2,12T Lượt xem <i class="fas fa-circle ml-2 mr-2"></i> 1 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/FYU-N2RWfso.jpg">
+<source src="/assets/videos/toy_story.mp4" type="video/mp4" />
+<source src="/assets/videos/toy_story.mp4" type="video/webm" />
+</video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/48dc418ef002957c6c867cb40aa191cc.jpg" alt="David Parker">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Toy Story</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">MinhAnh With Love</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    391 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/FMvppuS_ehg.jpg">
+<source src="/assets/videos/ipin&upin.mp4" />
+<source src="/assets/videos/ipin&upin.mp4" type="video/webm" />
+</video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="Chenai Simon">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Upin & Ipin: Truyền Thuyết Thần Đao - Trailer</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Mickey</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    75 Views <i class="fas fa-circle ml-2 mr-2"></i> 2 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/3-MNAX1jgbA.jpg">
+<source src="/assets/videos/Transformers_ The Last Knight Official Trailer 1 (2017) - Michael Bay Movie.mp4" />
+<source src="/assets/videos/Transformers_ The Last Knight Official Trailer 1 (2017) - Michael Bay Movie.mp4" type="video/webm" />
+</video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="Chenai Simon">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Transformers- The Last Knight Official Trailer 1</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Bayley Robertson</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    200 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/vGN6dixRBZA.jpg">
+<source src="/assets/videos/SPIDER-MAN_ NO WAY HOME Trailer (2021).mp4" type="video/mp4" />
+<source src="/assets/videos/SPIDER-MAN_ NO WAY HOME Trailer (2021).mp4" type="video/webm" />
+</video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="Chenai Simon">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>SPIDER-MAN- NO WAY HOME Trailer</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">
+Chenai Simon </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    264 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/Zv11L-ZfrSg.jpg">
+                                <source src="/assets/videos/TOM & JERRY - Official Trailer.mp4" type="video/mp4" />
+                                <source src="/assets/videos/TOM & JERRY - Official Trailer.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/acdbf3fcda4c1f108221a12844f087f0.jpg" alt="Harry Olson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>OM & JERRY - Official Trailer</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Harry Olson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    173 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="countdown mt-3 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2>Chương trình phát trực tiếp còn:</h2>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="countdown-date10" data-date="Jul 28,2023 12:00:00"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 my-auto">
+                        <h1>Video gần đây nhất</h1>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <div class="text-right">
+                            <a class="viewtube-btn bordered no" href="#">Xem nhiều hơn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center " data-slick='{"slidesToShow": , "slidesToScroll": }'>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/vGN6dixRBZA.jpg">
+<source src="/assets/videos/SPIDER-MAN_ NO WAY HOME Trailer (2021).mp4" type="video/mp4" />
+<source src="/assets/videos/SPIDER-MAN_ NO WAY HOME Trailer (2021).mp4" type="video/webm" />
+</video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="Chenai Simon">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>SPIDER MAN</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Chenai Simon </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">264 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/5465.jpg">
+                                <source src="/assets/videos/vut_bay.mp4" type="video/mp4" />
+                                <source src="/assets/videos/vut_bay.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/6b1345063abbc415fde0677567f2cf59.jpg" alt="Bayley Robertson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Vút bay | Trailer</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Bayley Robertson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    1172 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/3-MNAX1jgbA.jpg">
+                                <source src="/assets/videos/Transformers_ The Last Knight Official Trailer 1 (2017) - Michael Bay Movie.mp4" type="video/mp4" />
+                                <source src="/assets/videos/Transformers_ The Last Knight Official Trailer 1 (2017) - Michael Bay Movie.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/6b1345063abbc415fde0677567f2cf59.jpg" alt="Bayley Robertson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Transformers</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Bayley Robertson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    166 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/Zv11L-ZfrSg.jpg">
+                                <source src="/assets/videos/TOM & JERRY - Official Trailer.mp4" type="video/mp4" />
+                                <source src="/assets/videos/TOM & JERRY - Official Trailer.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/acdbf3fcda4c1f108221a12844f087f0.jpg" alt="Harry Olson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Tom & Jerry</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Harry Olson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    173 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/ih6_YyRVtpI.jpg">
+                                <source src="/assets/videos/(Official Trailer) GIA ĐÌNH CROODS_ KỶ NGUYÊN MỚI _ DỰ KIẾN KHỞI CHIẾU _ 27.11.2020.mp4" type="video/mp4" />
+                                <source src="/assets/videos/(Official Trailer) GIA ĐÌNH CROODS_ KỶ NGUYÊN MỚI _ DỰ KIẾN KHỞI CHIẾU _ 27.11.2020.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/acdbf3fcda4c1f108221a12844f087f0.jpg" alt="Harry Olson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>GIA ĐÌNH CROODS</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Harry Olson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    143 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/G99XxEDbNEs.jpg">
+                                <source src="/assets/videos/Disney & Pixar's Soul _ Official Trailer.mp4" type="video/mp4" />
+                                <source src="/assets/videos/Disney & Pixar's Soul _ Official Trailer.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="Chenai Simon">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Disney & Pixar's Soul</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Chenai Simon </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    173 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/8IGsQoL1AgQ.jpg">
+                                <source src="/assets/videos/Phim hoạt hình _The Boss Baby I Nhóc Trùm_  Official Trailer 2.mp4" type="video/mp4" />
+                                <source src="/assets/videos/Phim hoạt hình _The Boss Baby I Nhóc Trùm_  Official Trailer 2.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/6b1345063abbc415fde0677567f2cf59.jpg" alt="Bayley Robertson">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>The Boss Baby</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">Bayley Robertson </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    103 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="video-item-card">
+                            <div class="video-thumb">
+                                <video class="viewtube-player" preload="none" playsinline controls data-poster="assets/images/wzpjnFQ030M.jpg">
+                                <source src="/assets/videos/Vương Quốc Xe Hơi 3 _ Trailer Lồng Tiếng Chính Thức.mp4" type="video/mp4" />
+                                <source src="/assets/videos/Vương Quốc Xe Hơi 3 _ Trailer Lồng Tiếng Chính Thức.mp4" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="video-content">
+                                <div class="d-flex">
+                                    <a href="#" class="avatar">
+                                        <img src="assets/images/48dc418ef002957c6c867cb40aa191cc.jpg" alt="David Parker">
+                                    </a>
+                                    <div class="my-auto">
+                                        <a href="video.html">
+                                            <h5>Vương Quốc Xe Hơi 3</h5>
+                                        </a>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="author" href="#">David Parker </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <div class="d-flex video-meta-bottom">
+                                                    97 Views <i class="fas fa-circle ml-2 mr-2"></i> 5 months ago </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 my-auto">
+                        <h1>Các phần</h1>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <div class="text-right">
+                            <a class="viewtube-btn bordered no" href="#">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow-gallery">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="slider-for-vertical">
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/index.jpg);">
+                                        <a href="/assets/videos/Kung Fu Panda (2008) - Kung Fu Training Scene (6_10) _ Movieclips.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">KungFu Panda </a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/6b1345063abbc415fde0677567f2cf59.jpg" alt="Remaking our first cat scratching post">
+                                                    </a>
+                                                    <span class="ml-2">Bayley Robertson</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Hoạt hình</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>608 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/3CyBWp8Lb9U.jpg);">
+                                        <a href="/assets/videos/Minions _ All-New Mini-Movie (HD) _ Illumination.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">Minions</a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="Xiaomi Mi 11 vs OnePlus 8 Pro &#8211; SPEED TEST!">
+                                                    </a>
+                                                    <span class="ml-2">Chenai Simon</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Fantacy</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>311 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/maxresdefault.jpg);">
+                                        <a href="/assets/videos/DORAEMON MOVIE TRAILER 41 - 2021 _ NOBITA VÀ TIỂU CHIẾN TRANH VŨ TRỤ _ VIETSUB.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">Doraemon </a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/48dc418ef002957c6c867cb40aa191cc.jpg" alt="I&#8217;m Leaving YouTube">
+                                                    </a>
+                                                    <span class="ml-2">David Parker</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Horror</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>115 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/BjCwUk06ZSk.jpg);">
+                                        <a href="/assets/videos/Pokemon Legends_ Arceus - Official Trailer 2.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">Pokemon Legends</a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/acdbf3fcda4c1f108221a12844f087f0.jpg" alt="Return to the Sinnoh region in Pokémon Brilliant Diamond and Pokémon Shining Pearl!">
+                                                    </a>
+                                                    <span class="ml-2">Harry Olson</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Horror</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>98 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/5465.jpg);">
+                                        <a href="/assets/videos/vut_bay.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">Disney and Pixar&#8217;s Luca | Teaser Trailer </a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/6b1345063abbc415fde0677567f2cf59.jpg" alt="Disney and Pixar&#8217;s Luca | Teaser Trailer">
+                                                    </a>
+                                                    <span class="ml-2">Bayley Robertson</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Action</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>1173 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/FYU-N2RWfso.jpg);">
+                                        <a href="/assets/videos/toy_story.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">What will SpaceX do when they get to Mars? </a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/48dc418ef002957c6c867cb40aa191cc.jpg" alt="What will SpaceX do when they get to Mars?">
+                                                    </a>
+                                                    <span class="ml-2">David Parker</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Romance</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>391 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/SIJAEcOL6sI.jpg);">
+                                        <a href="/assets/videos/Pokemon Legends_ Arceus - Official Trailer 2.mp4" class="popup-video"><i class="fa fa-play"></i></a>
+                                        <div class="gallery-block-content">
+                                            <h2>
+                                                <a href="video.html">Pokemon </a>
+                                            </h2>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img class="d-inline avatar rounded-circle" src="assets/images/f71275f88816857574841b57a6f67aae.jpg" alt="This Laptop has NO Laptop Inside &#8211; What??">
+                                                    </a>
+                                                    <span class="ml-2">MinhAnh</span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-tag"></i>
+                                                    <a href="archive.html">Hoạt hình</a> </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fal fa-burn"></i>
+                                                    <span>84 Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="slider-nav-vertical">
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/index.jpg);">
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/3CyBWp8Lb9U.jpg);">
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/maxresdefault.jpg);">
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/BjCwUk06ZSk.jpg);">
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/5465.jpg);">
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/FYU-N2RWfso.jpg);">
+                                    </div>
+                                </div>
+                                <div class="slideshow-gallery-item pl-2 pr-2">
+                                    <div class="gallery-block-item style-1" style="background-image: url(assets/images/SIJAEcOL6sI.jpg);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-100 pb-100">
+                    <div class="col-md-6 my-auto">
+                        <section class="ad-banner horizontal" style="background-image: url(assets/images/banner-ad.jpg);">
+                            <div class="container">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-12 text-left">
+                                        <p>Phim hành động</p>
+                                        <h2 class="mb-5">The Curse of Audrey</h2>
+                                        <a class="viewtube-btn" href="#">Xem ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <section class="ad-banner horizontal" style="background-image: url(assets/images/ad-banner.jpg);">
+                            <div class="container">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-12 text-left">
+                                        <p>Khoa học viễn tưởng</p>
+                                        <h2 class="mb-5">Anything for Jackson</h2>
+                                        <a class="viewtube-btn" href="#">Xem ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 my-auto">
+                        <h1>Bài viết mới nhất</h1>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <div class="text-right">
+                            <a class="viewtube-btn bordered no" href="#">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-70">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog--item">
+                            <div class="blog--thumb">
+                                <a href="single.html">
+                                    <img src="assets/images/ben-collins-SpDOwp6PnBs-unsplash.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog--content">
+                                <div class="blog--meta">
+                                    <span>
+                                <i class="fal fa-user pr-10"></i>
+                                <a href="#">Bayley Robertson</a></span>
+                                    <span class="pl-10">
+                                <i class="fal fa-tags pr-10"></i>
+                                <a href="#">Body Parts</a> </span>
+                                </div>
+                                <h4><a href="single.html">Drama Is Life With The Dull Bits ..</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog--item">
+                            <div class="blog--thumb">
+                                <a href="single.html">
+                                    <img src="assets/images/troy-t-9sQgt_cR50c-unsplash.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog--content">
+                                <div class="blog--meta">
+                                    <span>
+                                <i class="fal fa-user pr-10"></i>
+                                <a href="#">Chenai Simon</a></span>
+                                    <span class="pl-10">
+                                <i class="fal fa-tags pr-10"></i>
+                                <a href="#">Body Parts</a>
+                                </span>
+                                </div>
+                                <h4><a href="single.html">Filmmaking Can Give You Everything</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog--item">
+                            <div class="blog--thumb">
+                                <a href="single.html">
+                                    <img src="assets/images/kal-visuals-IJzTAns4kUk-unsplash.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog--content">
+                                <div class="blog--meta">
+                                    <span>
+                                    <i class="fal fa-user pr-10"></i>
+                                    <a href="#">David Parker</a></span>
+                                    <span class="pl-10">
+                                    <i class="fal fa-tags pr-10"></i>
+                                    <a href="#">Body Parts</a>
+                                    </span>
+                                </div>
+                                <h4><a href="single.html">I Love Editing. It’s One Of My Fa..</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row pt-100 pb-50">
+                <div class="col-md-12 text-center">
+                    <a href="index.html"><img class="mb-70" src="assets/images/logo-alt.png" alt="Logo"></a>
+                </div>
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <h5>Sản phẩm</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Phát Video</a></li>
+                        <li><a href="#">Sáng tạo</a></li>
+                        <li><a href="#">Phát trực tiếp</a></li>
+                        <li><a href="#">Ghi màn hình</a></li>
+                        <li><a href="#">Thư viện</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <h5>Nguồn</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Bài viết</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Nguồn video</a></li>
+                        <li><a href="#">Nhà phát triển</a></li>
+                        <li><a href="#">Học viên</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <h5>Chi nhánh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trở thành member</a></li>
+                        <li><a href="#">Tham quan</a></li>
+                        <li><a href="#">Phát trực tiếp</a></li>
+                        <li><a href="#">Khách & Quản lý</a></li>
+                        <li><a href="#">Kiếm tiền</a></li>
+                        <li><a href="#">Sự hợp tác</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <h5>Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trực tiếp</a></li>
+                        <li><a href="#">Trình phát video</a></li>
+                        <li><a href="#">Ghi màn hình</a></li>
+                        <li><a href="#">Kiếm tiền</a></li>
+                        <li><a href="#">Sáng tạo</a></li>
+                        <li><a href="#">Sự hợp tác</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <h5>Liên hệ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trở thành hội viên</a></li>
+                        <li><a href="#">Tham quan</a></li>
+                        <li><a href="#">Phát trực tiếp</a></li>
+                        <li><a href="#">Khách & Quản lý</a></li>
+                        <li><a href="#">Kiếm tiền</a></li>
+                        <li><a href="#">Sự hợp tác</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-xl-4 col-md-6 my-auto">
+                    <ul class="list-inline social mb-0">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/ngonguyenkminh.dsn/"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/MinhAnh64738945"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCL4J_F9Y3BHXYOulzwUmP4A"><i class="fab fa-youtube"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/minh-ng%C3%B4-nguy%E1%BB%85n-kh%E1%BA%AFc-4a7a9a210/"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 offset-xl-4 col-md-3">
+                    <a href="#">
+                        <img class="img-fluid" src="assets/images/playstore.png" title="playstore" alt="playstore">
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-3 my-auto">
+                    <a href="#">
+                        <img class="img-fluid" src="assets/images/appstore.png" title="appstore" alt="appstore">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="col-sm-12 text-center">
+                <p>Copyright © 2021 MinhAnh Tube All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+    <div id="backtotop" style="display: block;"><i class="fal fa-lg fa-arrow-up"></i></div>
+    <script src='assets/js/plugins.js'></script>
+    <script src='assets/js/main.js'></script>
+</body>
+
+</html>
